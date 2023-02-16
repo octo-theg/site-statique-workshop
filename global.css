@@ -27,3 +27,13 @@ footer {
 h1 {
     text-align: center;
 }
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 20%;
+
+}
