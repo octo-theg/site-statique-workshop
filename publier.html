@@ -31,7 +31,7 @@
 
         <main>
             <h1>Nouvel article</h1>
-            <form action="">
+            <form method="POST" onsubmit="publierArticle(this)">
                 <label for="titre-article">Titre</label>
                 <input type="text" name="titre-article" id="titre-article" placeholder="Entrez un titre">
 
@@ -47,4 +47,12 @@
             <p>SKOOL 24</p>
         </footer>
     </body>
+    <script type="text/javascript">
+        const publierArticle = (form) => {
+            const titreArticle = document.querySelector("#titre-article")
+            const contenuArticle = document.querySelector("#contenu-article")
+
+            console.log(form)
+        }
+    </script>
 </html>
